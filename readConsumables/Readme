@@ -1,0 +1,9 @@
+Details about implementation:
+
+Top drawer has 6 drawers while the bottom drawer has 4.
+Bottom drawer has critical components so drawers will be numbered from 1 to 10
+with the first 4 being the bottom drawers and the last 6 being the top drawer.
+The booth cannot operate without Unity Tan and Unity Activate solutions which
+must be in the bottom drawer slots 1 and 2.
+The Cleanser must be in the bottom drawer in slot 4.
+Anything in top drawer can be in any order or even empty
