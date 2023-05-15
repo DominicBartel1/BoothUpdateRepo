@@ -1,0 +1,6 @@
+#!/usr/bin/env
+tar -xvf controlNozzle.tar.gz
+mv /usr/fcos/bin/controlNozzle /usr/fcos/bin/controlNozzle_bak
+cp /BoothUpdateRepo-main/controlNozzle /usr/fcos/bin/
+cd /readConsumables
+make && make install
