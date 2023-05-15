@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 echo "---------------------"
+echo "Backup old nozzle"
+echo "---------------------"
+mv /usr/fcos/bin/controlNozzle /usr/fcos/bin/controlNozzle_bak
+echo "---------------------"
 echo "Installing nozzle fix"
 echo "---------------------"
 tar -xvf controlNozzle.tar.gz
-mv /usr/fcos/bin/controlNozzle /usr/fcos/bin/controlNozzle_bak
 cp /BoothUpdateRepo-main/controlNozzle /usr/fcos/bin/
 echo "---------------------"
 echo "Installing RFID fix"
 echo "---------------------"
-cd /readConsumables
+cd readConsumables/
 make && make install
 echo "---------------------"
 echo "Complete"
 echo "---------------------"
-done
